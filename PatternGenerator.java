@@ -5,8 +5,9 @@
 public class PatternGenerator{
     public static void main(String[] args){
 
-    stars(3);
-    triangle(11);
+    stars(4);
+    //triangle(4);
+    odds(9);
 
     }
 
@@ -48,9 +49,21 @@ public class PatternGenerator{
         }
     }
 
-    public static void odds(int start){}
+    public static void odds(int start){
+    String temp = "";
+    
+
+//start -=2, j=0, temp = ""
+    for(int i = 0; i < start;){ //runs 3 times
+        for(int j = 0; j < start; j++){ //runs 3, then 1
+            temp += start;
+        }
+        System.out.println(temp);
+        start -= 2;
+        temp = "";
+    }
 
 
 
-
+    }
 }
