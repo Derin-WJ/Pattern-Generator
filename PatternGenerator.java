@@ -53,9 +53,9 @@ public class PatternGenerator{
     String temp = "";
     
 
-//start -=2, j=0, temp = ""
-    for(int i = 0; i < start;){ //runs 3 times
-        for(int j = 0; j < start; j++){ //runs 3, then 1
+
+    for(int i = 0; i < start;){ 
+        for(int j = 0; j < start; j++){ 
             temp += start;
         }
         System.out.println(temp);
